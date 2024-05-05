@@ -16,12 +16,12 @@ const hisSathi = ["him", "himself", "kushal"];
 // const flatArray = newArray4.flat(Infinity);
 // console.log(flatArray);
 
-console.log(Array.isArray(mySathi));
-console.log(Array.from("Sandeh"));
-console.log(Array.from({ name: "Kushal" })); //interesting --> gives an empty array
+// console.log(Array.isArray(mySathi));
+// console.log(Array.from("Sandeh"));
+console.log(Array.from({ name: "Kushal" })); //interesting --> gives an empty array because it cant convert it , it gets confused while key to make arry or value to make arry
 
-let score1 = 333;
-let score2 = 349;
-let score3 = 800;
+// let score1 = 333;
+// let score2 = 349;
+// let score3 = 800;
 
-console.log(Array.of(score1, score2, score3));
+// console.log(Array.of(score1, score2, score3));

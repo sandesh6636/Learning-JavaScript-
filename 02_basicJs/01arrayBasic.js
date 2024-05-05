@@ -1,5 +1,5 @@
 const myArr = [1, 3, 2, 4, 33];
-console.log(myArr[3]);
+// console.log(myArr[3]);
 
 const myArr2 = ["Sandesh", "Kushal", "Ram"];
 // for (let count = 0; count < myArr2.length; count++) {
