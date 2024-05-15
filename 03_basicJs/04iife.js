@@ -3,7 +3,7 @@
 (function hello() {
   //named iife
   console.log("Hello");
-})(); // must include ; if not throws error because the iife function dont know where to stop the context so ; is must
+})(); // must include ; if not throws error because the IIFE function dont know where to stop the context so ; is must
 
 // (() => {
 //   console.log("Arrow function Hello");

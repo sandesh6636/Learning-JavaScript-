@@ -22,7 +22,7 @@ const user = {
 
 // const check = () => {
 //   let user = "Sandeshhh";
-//   console.log(this.user);  // this --> {}  ,, this.user --> undifined
+//   console.log(this.user); // this --> {}  ,, this.user --> undifined
 // };
 
 // check();
@@ -35,5 +35,5 @@ const user = {
 // const add = (num1, num2) => num1 + num2; // this concept(Implicit return ) is maninly used in react so remamber , here use () not {}
 // console.log(add(5, 3));
 
-const test = () => ({ userName: "Sandesh" }); //without {} returning object wil give undifined
-console.log(test());
+// const test = () => ({ userName: "Sandesh" }); //without {} returning object wil give undifined
+// console.log(test());
