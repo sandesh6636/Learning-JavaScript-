@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chai aur code learnings</title>
+    <style>
+      body {
+        background-color: #2121;
+        color: aqua;
+      }
+    </style>
+  </head>
+  <body></body>
+  <script>
+    const creat = document.createElement("div");
+    console.log(creat);
+    creat.className = "main";
+    creat.id = Math.floor(Math.random() * 10 + 1);
+    creat.setAttribute("title", "titile form dom");
+    creat.style.backgroundColor = "orange";
+    creat.style.padding = "20px";
+    // creat.innerHTML = "Chaiii ";
+    const mesg = document.createTextNode("Heloooooooo");
+    creat.appendChild(mesg);
+    document.body.appendChild(creat);
+  </script>
+</html>

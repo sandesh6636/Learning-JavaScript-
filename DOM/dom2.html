@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+      body {
+        background-color: #212121;
+        color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="day">Sunday</div>
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+    </div>
+  </body>
+  <script>
+    const parent = document.querySelector(".parent");
+    //     console.log(parent);
+    //     console.log(parent.children[1].innerText);
+    for (let index = 0; index < parent.children.length; index++) {
+      //   console.log(parent.children[index].innerText);
+    }
+
+    // console.log(parent.firstElementChild);
+    // console.log(parent.lastElementChild);
+    const day1 = document.querySelector(".day");
+    // console.log(day1.parentElement);
+    // console.log(day1.nextElementSibling);
+    console.log(parent.childNodes); // gives complex dom tree , but behind the scene
+  </script>
+  indextml>
+</html>
