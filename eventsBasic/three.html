@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js</title>
+  </head>
+  <body>
+    <h1>Hellooo</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+  </body>
+  <script>
+    const sayHello = function (str) {
+      console.log(str, "Hello", Date.now());
+    };
+    // const intervalHello = setInterval(sayHello, 3000, "Sandesh");
+    document.querySelector("#stop").addEventListener("click", function () {
+      clearInterval(intervalHello);
+      console.log("Stop");
+    });
+    document.querySelector("#start").addEventListener("click", function () {
+      setInterval(sayHello, 3000, "Sandesh");
+      console.log("Start");
+    });
+  </script>
+</html>
