@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    const div = document.createElement("div");
+    console.log(div);
+    const img = document.createElement("img");
+    console.log(img);
+    div.appendChild(img);
+    // console.log(div);
+
+    const button = document.createElement("button");
+    button.innerHTML = "Click to See";
+    document.body.appendChild(button);
+    let imgSrc;
+    const requestLink = "https://api.github.com/users/sandesh6636";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", requestLink);
+    xhr.onreadystatechange = function () {
+      console.log(xhr.readyState);
+      if (xhr.readyState === 4) {
+        // console.log(this.responseText);
+        const data = JSON.parse(this.responseText);
+        console.log(typeof data);
+        console.log(data);
+        imgSrc = data.avatar_url;
+        img.setAttribute("src", imgSrc);
+        // console.log(div);
+        document.body.appendChild(div);
+        const followers = data.followers;
+        const p = document.createElement("p");
+        div.appendChild(p);
+        p.innerHTML = followers;
+        document.body.appendChild(p);
+        // console.log(data.followers);
+        // console.log(data.id);
+      }
+    };
+
+    xhr.send();
+  </script>
+</html>
